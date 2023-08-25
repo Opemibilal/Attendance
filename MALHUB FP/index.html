@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MALhub | Home</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome Icon Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+  <!-- <link href="css/modern-business.css" rel="stylesheet"> -->
+  
+  <style>
+    .modal-backdrop {
+      z-index: 0;
+    }
+  </style>
+
+
+</head>
+<body class="bg-light">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container mt-3">
+      <div class="nav-brand">
+        <img src="https://malhub.org/assets/img/Malhub-logo001.png" height="60" alt="MALhub">
+      </div>
+      <button class="navbar-toggler" style="background-color: #3c4493;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <a class="nav-link pl-4 text-body font-weight-bold active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-4 text-body font-weight-bold" href="">Tech Skills</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pl-4 text-body font-weight-bold" href="" data-toggle="dropdown">Services</a>
+            <!-- dropdown -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="">Link</a>
+              <a class="dropdown-item" href="">Link</a>
+              <a class="dropdown-item" href="">Link</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-4 text-body font-weight-bold" href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-4 text-body font-weight-bold" href="" data-toggle="modal" data-target="#contact">Contact</a>
+
+            <!-- the contact modal -->
+            <div class="modal fade" id="contact">  
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header border-bottom-0 pb-0">
+                    <div class="ml-auto">
+                      <h4 class="modal-title">Contact Us Now</h4>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body pt-1 pb-4">
+                    <form class="pl-3 pr-3">
+                      <div class="control-group form-group">
+                        <div class="controls">
+                          <label class="font-weight-bold">Full Name:</label>
+                          <input placeholder="Enter your full name" type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                          <p class="help-block"></p>
+                        </div>
+                      </div>
+                      <div class="control-group form-group">
+                        <div class="controls">
+                          <label class="font-weight-bold">Email:</label>
+                          <input placeholder="name@gmail.com" type="email" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                          <p class="help-block"></p>
+                        </div>
+                      </div>
+                      <div class="control-group form-group">
+                        <div class="controls">
+                          <label class="font-weight-bold">Message:</label>
+                          <textarea rows="5" cols="" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-block text-white mt-3 mb-3" style="background-color: #3c4493;">Send Message</button>
+                      </div>
+                      <div class="text-center">
+                        <p>or</p>
+                      </div>
+                      <button type="button" class="btn btn-block text-white mt-3" data-toggle="modal" data-target="#signUp" style="background-color: #3c4493;">Join Us</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+        <button type="button" class="btn rounded-lg text-white pl-4 pr-4" data-toggle="modal" data-target="#signUp" style="background-color: #3c4493;">Sign Up</button>
+
+        <!-- the signup modal -->
+        <div class="modal fade" id="signUp">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- modal header -->
+              <div class="modal-header border-bottom-0 pb-0">
+                <div class="text-center">
+                  <h4 class="modal-title">Sign Up</h4>
+                  <p class="pl-3 pr-3">Learn on your our time from well experienced and dedicated tutors</p>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <!-- modal body -->
+              <div class="modal-body pt-1 pb-4">
+                <form class="pl-3 pr-3">
+                  <div class="control-group form-group">
+                    <div class="controls">
+                      <label class="font-weight-bold">FULL NAME:</label>
+                      <input placeholder="Enter your full name" type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                  <div class="control-group form-group">
+                    <div class="controls">
+                      <label class="font-weight-bold">EMAIL:</label>
+                      <input placeholder="name@gmail.com" type="email" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                  <div class="control-group form-group">
+                    <div class="controls">
+                      <label class="font-weight-bold">PASSWORD:</label>
+                      <input placeholder="Create password" type="password" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                      <p class="help-block"></p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-block text-white mt-5 mb-3" style="background-color: #3c4493;"><a href="./attendance.html">Join for Free</a></button>
+                  <div class="text-center">
+                    <p>or</p>
+                  </div>
+                  <button type="button" class="btn btn-block text-body border-dark font-weight-bold">Continue with Google <i class="fa-brands fa-google"></i></button>
+                  <button type="button" class="btn btn-block mt-3 text-body border-dark font-weight-bold">Continue with Facebook <i class="fa-brands fa-facebook"></i></button>
+                  <div class="text-center mt-3">
+                    <h6 class="text-muted font-weight-normal">Already on MALhub? <a class="font-weight-bold" style="color: #3c4493;" href="">Log in</a></h6>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- About us at hub -->
+    <div class="container text-center">
+      <h1 class="pl-3 pr-3 pt-5 mt-5 display-3 font-weight-normal">Discover your Potentials with our Courses</h1>
+      <h4 class="container mt-5 font-weight-normal pl-5 pr-5">At MALhub, our programmes are designed to provide you with in-demand skills for the global workplace</h4>
+      <a href="" class="btn rounded-lg text-white mt-5 pl-5 pr-5 pt-2 pb-2"  style="background-color: #3c4493;">Check Courses</a>
+    </div>
+
+    <!-- review -->
+    <div class="container pl-5 pr-5 mt-5 row">
+      <div class="col-sm-4">
+        <h4 class="font-weight-bolder">50+</h4>
+        <p>Jobs created & supporting sustainable business ideas</p>
+      </div>
+      <div class="col-sm-4">
+        <h4 class="font-weight-bolder">200+</h4>
+        <p>Female entrepreneurs supported through Women in Tech Programs</p>
+      </div>
+      <div class="col-sm-4">
+        <h4 class="font-weight-bolder">7000+</h4>
+        <p>Active Community members with interest tech solutions</p>
+      </div>
+    </div>
+    
+    <!-- Testimonial -->
+    <div class="container mt-5">
+      <h1 class="text-center font-weight-bold">T<span style="text-decoration: 5px underline;">estimonial</span>s</h1>
+    </div>
+
+
+    
+  </main>
+  
+  
+
+
+  <br>
+  <br>
+  <br>
+
+  <script>
+    $(document).ready(function(){
+      $('#signUp').modal('show');
+    });
+    // $(document).ready(function(){
+    //   var checkScrollBar = function(){
+    //     $('.bg-secondary').css({
+    //       backgroundColor: $(this).scrollTop() > 1 ? 'grey' : 'transparent'
+    //     })
+    //   }
+    //   $(window).on('load resize scroll', checkScrollBar)
+    // });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+  
+</body>
+</html>
